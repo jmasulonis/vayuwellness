@@ -1,0 +1,616 @@
+/* ----------------------- */
+/* HTML Setup */
+/* ----------------------- */
+
+/* Color Swatches 
+    Green: #82c5be;
+    Orange: #f1ce95;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{
+    zoom: 1;
+}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ----------------------- */
+/* Reuseable Components */
+/* ----------------------- */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+/* Headings */
+h1,
+h2,
+h3{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 230%;
+    word-spacing: 4px;
+}
+
+h2{
+    font-size: 165%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+    h2::after{
+        display: block;
+        height: 2px;
+        background-color: #f1ce95;
+        content: "";
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+h3{
+    font-size: 100%;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* Buttons */
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 20px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #5fb5ac;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    border-bottom: transparent;
+    background-color: #82c5be;
+    color:#fff;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]{
+    background-color: #5fb5ac;
+    color:#fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #82c5be;
+    color: #82c5be;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #5fb5ac;
+    color: #fff;
+}
+
+ /* icons */
+ ion-icon{
+    font-size: 280%;
+    color: #82c5be;
+    margin-bottom: 12px;
+    display: inline-block;
+
+}
+
+/* Links */
+a:link,
+a:visited{
+    color: #f1ce95;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #f1ce95;
+    transition: border-bottom 0.5s, color 0.5s;
+    -webkit-transition: border-bottom 0.5s, color 0.5s;
+    -moz-transition: border-bottom 0.5s, color 0.5s;
+    -ms-transition: border-bottom 0.5s, color 0.5s;
+    -o-transition: border-bottom 0.5s, color 0.5s;
+}
+
+a:hover,
+a:active{
+    color:#555;
+    border-bottom: 1px solid transparent;
+
+}
+
+/* ----------------------- */
+/* Header */
+/* ----------------------- */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.014)), url(../images/storyblocks-back-view-of-sportswomen-standing-in-yoga-position_r8gKfQNTWz.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+/* Main Nav */
+nav{
+    padding: 10px 0;
+}
+.logo{
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    font-size: 15px;
+}
+    .main-nav li{
+        display: inline-block;
+        margin-left: 40px;
+    }
+        .main-nav:first-child{
+            margin-left: 0px;
+        }
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        padding: 8px 0;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 90%;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.2s;
+        -webkit-transition: border-bottom 0.2s;
+        -moz-transition: border-bottom 0.2s;
+        -ms-transition: border-bottom 0.2s;
+        -o-transition: border-bottom 0.2s;
+}
+    .main-nav li a:hover,
+    .main-nav li a:active{
+        border-bottom: 1px solid #82c5be;
+    }
+
+/* Fixed Nav */
+    .fixed-nav{
+        position: fixed;
+        top:0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 2px 2px #efefef;
+        z-index: 9999;
+    }
+    .fixed-nav .main-nav li a:link,
+    .fixed-nav .main-nav li a:visited{
+        padding: 8px 0;
+        color: #82c5be;
+    }
+
+/* ----------------------- */
+/* Mobile Nav */
+/* ----------------------- */
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* ----------------------- */
+/* Features */
+/* ----------------------- */
+.section-features .long-copy{
+    margin-bottom: 20px;
+}
+
+/* ----------------------- */
+/* Yoga Showcase */
+/* ----------------------- */
+
+.section-yoga{
+    padding: 0;
+}
+.yoga-showcase{
+    list-style: none;
+    width: 100%;
+}
+    .yoga-showcase li{
+        display: block;
+        float: left;
+        width: 25%;
+    }
+
+.yoga-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+    .yoga-photo img{
+        opacity: 0.7;
+        width: 100%;
+        height: auto;
+        transform: scale(1.15);
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        -o-transform: scale(1.15);
+        transition: transform 0.5s, opacity 0.5s;
+        -webkit-transition: transform 0.5s, opacity 0.5s;
+        -moz-transition: transform 0.5s, opacity 0.5s;
+        -ms-transition: transform 0.5s, opacity 0.5s;
+        -o-transition: transform 0.5s, opacity 0.5s;
+      
+}
+    .yoga-photo img:hover{
+        opacity: 1;
+        transform: scale(1.03);
+    }
+
+/* ----------------------- */
+/* How it works? */
+/* ----------------------- */
+.section-steps{
+    background-color: #f6fbfa;
+}
+
+    .steps-box:first-child{
+        text-align: right;
+        padding-right: 3%;
+        margin-top: 25px;
+
+    }
+    .steps-box:last-child{
+        padding-right: 3%;
+        margin-top: 70px;
+    }
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 25px;
+}
+    .works-step:last-of-type{
+        margin-bottom: 80px;
+    }
+
+    .works-step div{
+        color: #f1ce95;
+        border: 2px solid #f1ce95;
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        padding: 3px;
+        float: left;
+        font-size: 150%;
+        margin-right: 15px;
+    }
+.btn-app ion-icon{
+    margin-right: 10px;
+    color: lightslategray;
+}
+    .btn-app:link,
+    .btn-app:visited{
+        border: 0;
+    }
+
+/* ----------------------- */
+/* Cities */
+/* ----------------------- */
+.section-cities img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.city-features{
+    margin-bottom: 5px;
+}
+
+.city-features ion-icon{
+    text-align: center;
+    font-size: 15px;
+    margin-top: -4px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    color: lightslategray;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+/* ----------------------- */
+/* Testimonals */
+/* ----------------------- */
+
+.section-testimonals{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.836)), url(../images/storyblocks-group-of-women-sitting-on-a-yoga-mats-and-meditating-in-a-studio_SRzYqx36qW.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+    cite img{
+        height: 45px;
+        border-radius: 50%;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+/* ----------------------- */
+/* Pricing Section */
+/* ----------------------- */
+.section-pricing{
+    background-color: #f6fbfa;
+}
+
+.plan-box{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 9%);
+}
+    .plan-box div{
+        padding: 15px;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .plan-box ul{
+        list-style: none;
+    }
+        .plan-box ul li{
+            padding: 3px;  
+        }
+
+.plan-price{
+    color:#37a89d;
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+    .plan-price span{
+        font-size: 30%;
+    }
+    .plan-price-meal{
+        font-size: 80%;
+    }
+
+.plan-box ion-icon{
+    margin:0 5px 0 0;
+    font-size: 15px;
+    line-height: 120%;
+    vertical-align: middle;
+}
+
+.plan-box div:first-child{
+    background-color: #fffffe;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+    .btn-signup:link,
+    .btn-signup:visited{
+        margin: 0;
+    }
+
+/* ----------------------- */
+/* Contact Form */
+/* ----------------------- */
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]{
+    border: none;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+/* ----------------------- */
+/* Contact Form */
+/* ----------------------- */
+
+footer{
+    background-color: #82c5be;
+    padding: 30px;
+}
+
+footer p{
+    color: #eaf5f4;
+    text-align: center;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+    font-size: 80%;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin: 0;
+}
+
+.social-links ion-icon{
+    color:#eaf5f4;
+    font-size: 25px;
+}
+    .social-links ion-icon:hover{
+        color:#fff;
+        transition: color 0.2s;
+    }
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #eaf5f4;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#fff;
+}
+
+/* ----------------------- */
+/* Animations */
+/* ----------------------- */
+.js--waypoint-1,
+.js--waypoint-2{
+    opacity: 0;
+}
+
+.js--waypoint-1.animate__animated,
+.js--waypoint-2.animate__animated\ {
+    opacity: 1;
+}
+
+
+.js--waypoint-3.animate__animated{
+    animation-duration: 1s;
+}
