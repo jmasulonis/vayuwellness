@@ -346,7 +346,7 @@ nav{
     }
 
 .app-screen{
-    width: 40%;
+    width: 62%;
 }
 
 .works-step{
@@ -606,7 +606,7 @@ footer p{
 }
 
 .js--waypoint-1.animate__animated,
-.js--waypoint-2.animate__animated {
+.js--waypoint-2.animate__animated\ {
     opacity: 1;
 }
 
